@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>The Beacon</title>
+        <meta name="keywords" content="address, hours, email, contact, review, tamaqua, beacon, diner, family restaurant, takeout, and rewards." />
+        <meta name= "description" content="We appreciate customer feedback to both improve our service and encourage newcomers to come inside. Our contact information is listed here for your convenience." />
+        <!-- to hide this project from google, etc. use no robots nofollow-->
+        <meta name="robots" content="noindex,nofollow" />
+        <!-- for responsive need viewport meta on ALL html pages -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="project_2.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <h3><a href="under-construction.html">Login</a></h3>
+                <a href="index.html"><h1>The Beacon</h1>
+                <h2>Diner &amp; Restaurant</h2>
+                <section id="hero">
+                    <img src="Images/Large-logo.jpg" alt="The Beacon Logo"/>
+                </section></a>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="breakfast-menu.html">Breakfast</a></li>
+                    <li><a href="under-construction.html">Dinner</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="under-construction.html">Rewards</a></li>
+                </ul>
+            </nav>
+            <main>
+                <form name="feedback-form" id="feedback-form" method="post" action="catch-form.php">
+                <fieldset name="user-info" id="user-info" >
+                <h3 class="legend">Who Are You?</h3>
+                <label for="first-name">Full Name*</label>
+                    <input type="text" name="first-name" id="first-name" required autofocus placeholder="Jane" tabindex="1" />
+                    <!-- email -->
+                    <label for="email">Your Email*</label>
+                    <input type="email" name="email" id="email" required placeholder="your@email.com" tabindex="2" />
+                    <!-- phone number -->
+                    <label for="telephone">Your Phone (optional)</label>
+                    <input type="tel" name="telephone" id="telephone"  placeholder="000-000-0000" tabindex="3"/>
+                    <!-- how to contact -->
+                    <p>How would you prefer we contact you?</p>
+                    <label for="email-preference">By Email</label>
+                    <input type="radio" name="contact-preference" id="email-preference" tabindex="5"/>
+                    <label for="phone-preference">By Phone</label>
+                    <input type="radio" name="contact-preference" id="phone-preference" tabindex="6"/>
+                </fieldset>
+                
+                <fieldset name="user-comments" id="user-comments" >
+                <h3 class="legend">What Do You Want to Tell Us?</h3>
+                    <textarea name="feedback" id="feedback" required  placeholder="We value your thoughts and suggestions." tabindex="6"></textarea><!-- must have no content between open and close of textarea for placeholder to appear -->
+                
+                
+                <div id="form-buttons">
+                <input type="reset" name="reset" id="reset" />
+                   <button type="submit" name="submit" id="submit" tabindex="8">
+                       Share Thoughts
+                    </button>
+                </div>
+                </fieldset>
+            </form>
+            </main>
+            <footer>
+                <p>Sunday&#45;Thursday 07&#58;00am&#45;07&#58;00pm<br />Friday&#45;Saturday 07&#58;00am&#45;08&#58;00pm</p>
+                <p>&copy;Copyright 2021. Beacon Diner. Last Modified 3/22/2021.</p>
+            </footer>
+        </div>
+    </body>
+</html>
