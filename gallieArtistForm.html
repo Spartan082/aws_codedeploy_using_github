@@ -1,0 +1,59 @@
+<!-- <!doctype html>
+<html lang="en">
+	<head>
+		<title>Gallie Form Demo</title>
+		<meta name="keywords" content="art, market, artists, customers, commissions, Gallie, payment" />
+		<meta name= "description" content="Gallie is an online marketplace tailored for artists to showcase their own digital
+		art, and it provides a bridge for consumers to commission pieces of art." />
+		<!-- to hide this project from google, etc. use no robots nofollow-->
+		<meta name="robots" content="noindex,nofollow" />
+		<!-- for responsive need viewport meta on ALL html pages -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="gallie.css" rel="stylesheet" />
+		<script src="gallieArtistForm.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+			</header>
+			<nav>
+				<ul>
+					<li><a href="gallieCustomerForm.html">Customer Request Form<a></li>
+					<li><a href="gallieArtistForm.html">Artist Request Form<a></li>
+					<li><a href="gallieRecipts.html">Recipts View<a></li>
+				</ul>
+			</nav>
+			<main>
+				<div id="view">
+				
+				</div>
+				<div id="form">
+					<h2>Gallie Demo:<br/>Customer Request Form</h2>
+					<!-- Customer Info --> 
+					<form name="artist-request-form" id="artist-request-form" method="post" action="artistconnection.php">
+						<fieldset name="user-info" id="user-info">
+							<h3 class="legend">Art Invoice</h3>
+							<label for="artist-name">Your Username*</label>
+							<input type="text" name="artist-name" id="artist-name" required autofocus placeholder="Jane143" tabindex="1" />
+							<label for="artist-email">Your Email*</label>
+							<input type="email" name="artist-email" id="artist-email" required placeholder="your@email.com" tabindex="2" />
+							<label for="price">Your Price*</label>
+							<input type="number" min="1" step="any" name="price" id="price" required autofocus placeholder="10.00" tabindex="3" />
+							<label for="customer-email">Customer Email*</label>
+							<input type="email" name="customer-email" id="customer-email" required placeholder="your@email.com" tabindex="4" />
+							<label for="art-name">Art Name*</label>
+							<input type="text" name="art-name" id="art-name" required autofocus placeholder="Monalisa" tabindex="5" />
+							<label for="art-description">Art Description</label>
+								<textarea name="art-description" id="art-description" required  placeholder="Please add a brief description of requested art." tabindex="6"></textarea><!-- must have no content between open and close of textarea for placeholder to appear -->
+							<div id="form-buttons">
+								<input type="reset" name="reset" id="reset" />
+								<button type="submit" name="submit" id="submit" tabindex="7">Submit Request</button>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</main>
+		</div>
+	</body>
+</html>
+ -->

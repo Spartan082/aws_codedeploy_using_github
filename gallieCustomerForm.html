@@ -1,0 +1,60 @@
+<!-- <!doctype html>
+<html lang="en">
+	<head>
+		<title>Gallie Form Demo</title>
+		<meta name="keywords" content="art, market, artists, customers, commissions, Gallie, payment" />
+		<meta name= "description" content="Gallie is an online marketplace tailored for artists to showcase their own digital
+		art, and it provides a bridge for consumers to commission pieces of art." />
+		<!-- to hide this project from google, etc. use no robots nofollow-->
+		<meta name="robots" content="noindex,nofollow" />
+		<!-- for responsive need viewport meta on ALL html pages -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="gallie.css" rel="stylesheet" />
+		<script src="gallieCustomerForm.html.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+			</header>
+			<nav>
+				<ul>
+					<li><a href="gallieCustomerForm.html">Customer Request Form<a></li>
+					<li><a href="gallieArtistForm.html">Artist Request Form<a></li>
+					<li><a href="gallieRecipts.html">Recipts View<a></li>
+				</ul>
+			</nav>
+			<main>
+				<h2>Gallie Demo:<br/>Artist Request Form</h2>
+				<!-- Customer Info --> 
+				<form name="artist-request-form" id="artist-request-form" method="post" action="customerconnection.php">
+					<fieldset name="user-info" id="user-info">
+						<h3 class="legend">Who Are You?</h3>
+						<label for="customer-name">Username*</label>
+						<input type="text" name="customer-name" id="customer-name" required autofocus placeholder="Jane124" tabindex="1" />
+						<!-- email -->
+						<label for="customer-email">Your Email*</label>
+						<input type="email" name="customer-email" id="customer-email" required placeholder="your@email.com" tabindex="2" />
+						<!-- phone number -->
+						<label for="customer-telephone">Your Phone (optional)</label>
+						<input type="tel" name="customer-telephone" id="customer-telephone"  placeholder="000-000-0000" tabindex="3"/>
+					</fieldset>
+					<!-- Artist Info --> 
+					<fieldset name="artist-info" id="artist-info" >
+						<h3 class="legend">Who would you like to commission from?</h3>
+						<label for="artist-name">Username*</label>
+						<input type="text" name="artist-name" id="artist-name" required autofocus placeholder="Jane143" tabindex="4" />
+						<label for="price">Initial Offer*</label>
+						<input type="number" min="1" step="any" name="price" id="price" required autofocus placeholder="10.00" tabindex="5" />
+						<label for="art-description">Request Description</label>
+							<textarea name="art-description" id="art-description" required  placeholder="Please add a brief description of desired art commission for the artist to review." tabindex="6"></textarea><!-- must have no content between open and close of textarea for placeholder to appear -->
+						<div id="form-buttons">
+							<input type="reset" name="reset" id="reset" />
+							<button type="submit" name="submit" id="submit" tabindex="7">Submit Request</button>
+						</div>
+					</fieldset>
+				</form>
+			</main>
+		</div>
+	</body>
+</html>
+ -->

@@ -1,0 +1,208 @@
+@import url("meyerReset.css");
+@import url("superFormResetAbr.css");
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&family=Fontdiner+Swanky&family=Texturina:wght@400;700&display=swap');
+/********************* body, wrapper *******************/
+html, body {
+    font-size: 100%; /* locks in 1em or rem as 16 px */
+}
+body{
+    font-family: "Texturina", Georga, serif;
+    color: rgb(255,255,255);
+    background-color: #F0B27A;
+}
+div#wrapper {
+    max-width: 1200px; 
+    width: 96%;
+    margin: 0 auto 0 auto;
+    background-color: #F0B27A;
+}
+/******************************* header *******************************/
+header h1{
+    background-color: #F0B27A;
+    font-size: 3rem; /* 48/16=3 */
+    line-height: 3.25rem; /* 52/16=3.25 */
+    text-align: center;
+    color: rgb(255,255,255);
+    font-family: "Cherry Cream Soda", Georga, serif;
+    text-shadow: -1px 5px 0 #3498DB;
+}
+header a:link{
+    text-decoration: none;
+    transition: all 250ms ease-out;
+}
+header a:hover, header a:active{
+    color: rgb(255,255,255);
+    opacity: .7;
+}
+
+/******************************* nav *******************************/
+nav {
+    margin-bottom: 30px;
+}
+nav ul{
+    display:flex;
+    justify-content: center;
+    font-family: "Fontdiner Swanky", Georga, serif;
+}
+nav ul li{
+color: rgb(255,255,255);
+    width:25%;
+    background-color: #F0B27A;
+    border: solid 5px rgb(255,255,255);
+    border-left: none;
+    text-align: center;
+    padding: 13px 0 13px 0;
+}
+nav ul li:first-child{
+    border-left: solid 5px rgb(255,255,255);
+}
+nav ul li a:link{	
+	color: rgb(255,255,255);
+	text-decoration: none;
+}
+nav ul li a:active, nav ul li a:hover{
+    color: #3498DB;
+    transition: all 250ms ease-out;
+    text-decoration: none;
+}
+nav ul li:visited{
+    
+}
+nav ul li a{
+    font-size: 1.25rem; /* 20/16=1.25 */ 
+    line-height: 1.5rem; /* 24/16=1.5 */
+    text-decoration: none;
+    color: rgb(255,255,255);
+    text-align: center;
+}
+
+/********************* main *******************/
+main h2{
+	font-size: 2rem;
+	line-height: 2.25rem;
+	text-align: center;
+	color: rgb(255,255,255);
+	font-family: "Fontdiner Swanky", Georga, serif;
+	text-shadow: -1px 5px 0 #3498DB;
+	margin-bottom:30px;
+}
+
+/********************* box *******************/
+div.box{
+	width: 75%;
+	max-width: 900px;
+	margin: 0 auto 0 auto;
+	display: box;
+}
+div.box ul{
+	border: 2px dashed #F0B27A;
+	padding: 10px 10% 10px 10%;
+	font-size: 1.25rem; 
+	line-height: 1.5rem;
+	font-family: "Texturina", Georga, serif;
+	color: #3498DB;
+	background-color: rgb(255,255,255);
+}
+div.box li{
+	padding-bottom: 5px;
+}
+div#view{
+	Margin-top: 20px;
+}
+div#view{
+	Margin-top: 50px;
+}
+
+
+/********************* form *******************/
+form {
+    width:75%;
+    padding:30px 5% 30px 5%;
+    background-color: rgba(255, 255, 255, .5);
+    margin:0 auto 0 auto;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+fieldset {
+    padding:15px 0px 15px 15.833%;
+    border: 2px dashed rgb(255, 255, 255);
+    margin-bottom: 15px;
+}
+
+h3.legend {
+    text-align:left;
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom: 16px;
+}
+label, input {
+    display:block;
+}
+label[for] {
+    margin: 0 0 3px 6px;
+    font-size: 18px;
+}
+fieldset p {
+    margin-bottom: 4px;
+}
+input[type="text"], input[type="number"], input[type="email"], input[type="tel"] {
+    height:36px;
+    width:75%;
+    min-width: 190px;
+    margin-bottom: 18px;
+    font-size:16px;
+    padding-left: 4px;
+    /*transition: all 1s ease;  put on non-interacted rule to have toggle */
+}
+input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="tel"]:focus, textarea:focus {
+    border: 3px solid rgb(0, 255, 0);
+    background-color:rgba(0, 255, 0, .3);
+}
+textarea {
+    width:75%;
+    height:300px;
+    resize:vertical;
+    padding:6px;
+    font-size:16px;
+    margin-bottom:16px;
+}
+div#form-buttons {
+    width:75%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    clear:both;
+}
+button[type="submit"] {
+    height: 36px;
+    border-radius:12px;
+    padding:0 8px 0 8px;
+}
+button[type="submit"]:hover {
+    color:rgb(255, 255, 255);
+    background-color:rgba(0, 150, 0, .7);
+}
+
+/********************* footer *******************/
+
+@media screen and (max-width:415px){
+    div#wrapper{
+	width:100%;
+    }
+    /********************* form *******************/
+    form{
+	width:90%;
+    }
+    fieldset {
+	padding:15px 0px 15px 7.9%;
+    }
+    input[type="text"], input[type="number"], input[type="email"], input[type="tel"] {
+	width:90%;
+    }
+    textarea{
+	width:90%;
+    }
+    div#form-buttons{
+	width:90%;
+    }
+}
